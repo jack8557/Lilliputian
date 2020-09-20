@@ -16,13 +16,9 @@ Using Lilliputian is extremely easy. Please check how to use it in the example!
 
 ## Support
 
-For support using Buttons, please join the official `support server
-<https://discord.gg/SHa7uD8>`_ on `Discord <https://discordapp.com/>`_.
+For support, please join the official support server
 
-|Discord|
-
-.. |Discord| image:: https://img.shields.io/discord/490948346773635102?color=%237289DA&label=Pythonista&logo=discord&logoColor=white
-   :target: https://discord.gg/RAKc3HF
+![Discord Shield](https://discordapp.com/api/guilds/730339636639039548/widget.png?style=shield)
 
 ## License
 
