@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+}
+
+group 'me.godead'
+version '0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/groups/public/"
+    }
+    maven {
+        url "https://repo.codemc.org/repository/maven-public"
+    }
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+
+    compileOnly group: 'commons-io', name: 'commons-io', version: '2.8.0'
+
+    compileOnly 'com.github.retrooper:packetevents:1.6.9'
+}
