@@ -18,8 +18,7 @@ Using Lilliputian is extremely easy. Please check how to use it in the example!
 
 For support, please join the official support server
 
-
-![Discord Server](https://discordapp.com/api/guilds/730339636639039548/widget.json)
+![Discord Server](https://discord.com/api/guilds/730339636639039548/widget.png?style=banner2)
 
 ## License
 
