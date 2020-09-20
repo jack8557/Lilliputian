@@ -12,7 +12,7 @@ public class ExampleMain extends JavaPlugin {
     @Override
     public void onEnable() {
         final Lilliputian lilliputian = new Lilliputian(this);
-        lilliputian.getPluginDependencyBuilder()
+        lilliputian.getDependencyBuilder()
 
                 // Jitpack
                 .addDependency(new Dependency(
