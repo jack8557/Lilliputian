@@ -10,6 +10,8 @@ Never shade again! The only dependency you will ever need!
 
 ## Installation
 
+https://jitpack.io/#godead/lilliputian/
+
 Using Lilliputian is extremely easy. Please check how to use it in the example!
 
 ## License
