@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class Lilliputian {
 
-    private final PluginDependencyBuilder builder = new PluginDependencyBuilder();
+    private final DependencyBuilder builder = new DependencyBuilder();
 
     @Nullable
     private static Plugin plugin = null;
@@ -33,7 +33,7 @@ public class Lilliputian {
         return plugin;
     }
 
-    public PluginDependencyBuilder getPluginDependencyBuilder() {
+    public DependencyBuilder getDependencyBuilder() {
         return builder;
     }
 }

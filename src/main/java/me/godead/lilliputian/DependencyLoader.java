@@ -15,7 +15,7 @@ class DependencyLoader {
     private final URLClassLoader classLoader;
 
     @NotNull
-    private final List<File> loaded = new ArrayList<>();
+    private final List<File> loadedFiles = new ArrayList<>();
 
     public DependencyLoader(@NotNull final URLClassLoader classLoader) {
         this.classLoader = classLoader;
@@ -24,7 +24,7 @@ class DependencyLoader {
     //Adds the file to the class path
     protected void loadDependency(File file) {
 
-        if (loaded.contains(file)) return;
+        if (loadedFiles.contains(file)) return;
 
         try {
             try {
@@ -34,7 +34,7 @@ class DependencyLoader {
             } catch (Throwable t) {
                 t.printStackTrace();
             }
-            loaded.add(file);
+            loadedFiles.add(file);
         } catch (NoClassDefFoundError e) {
             e.printStackTrace();
         }

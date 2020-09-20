@@ -5,18 +5,18 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PluginDependencyBuilder {
+public class DependencyBuilder {
 
     @NotNull
     public static List<Dependency> dependencies = new ArrayList<>();
 
-    public PluginDependencyBuilder addDependency(@NotNull Dependency dependency) {
+    public DependencyBuilder addDependency(@NotNull Dependency dependency) {
         dependencies.add(dependency);
         return this;
     }
 
     public void loadDependencies() {
-        PluginDependencyBuilder.dependencies.forEach(Dependency::downloadAndLoad);
+        DependencyBuilder.dependencies.forEach(Dependency::downloadAndLoad);
     }
 
 }
