@@ -21,6 +21,10 @@ repositories {
     }
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '6.2'
+}
+
 dependencies {
     //implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testCompile group: 'junit', name: 'junit', version: '4.12'
