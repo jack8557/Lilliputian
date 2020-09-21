@@ -26,6 +26,6 @@ https://discord.gg/SHa7uD8
 
 ## License
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Lilliputian is licensed under the Apache License 2.0
+Lilliputian is licensed under the MIT License
