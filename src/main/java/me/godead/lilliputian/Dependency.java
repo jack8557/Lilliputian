@@ -82,16 +82,16 @@ public class Dependency {
 
     protected void downloadAndLoad() {
         // Downloads the dependency
-        download();
+        final File file = download();
         // Then loads it into the class path
-        load(new File(Lilliputian.path, getJarName()));
+        load(file);
     }
 
     private void load(File file) {
         loader.loadDependency(file);
     }
 
-    private void download() {
+    private File download() {
 
         File dir = new File(Lilliputian.path);
 
@@ -99,7 +99,8 @@ public class Dependency {
 
         File file = new File(Lilliputian.path + "/" + getJarName());
 
-        if (file.exists()) { System.out.println("Returned, already exists"); return;}
+        // Returns if the dependency already exists
+        if (file.exists()) return file;
 
         //System.out.println(getDownloadURL());
 
@@ -110,6 +111,7 @@ public class Dependency {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return file;
     }
 
 }
