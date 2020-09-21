@@ -12,6 +12,8 @@ Never shade again! The only dependency you will ever need!
 
 https://jitpack.io/#godead/lilliputian/
 
+[![](https://jitpack.io/v/godead/lilliputian.svg)](https://jitpack.io/#godead/lilliputian/)
+
 Using Lilliputian is extremely easy. Please check how to use it in the example!
 
 ## Support
@@ -24,4 +26,6 @@ https://discord.gg/SHa7uD8
 
 ## License
 
-Lilliputian is licensed under GNU General Public License v3.0.
+[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Lilliputian is licensed under the Apache License 2.0
