@@ -14,6 +14,14 @@ https://jitpack.io/#godead/lilliputian/
 
 Using Lilliputian is extremely easy. Please check how to use it in the example!
 
+## Support
+
+For support, please join the official support server
+
+https://discord.gg/SHa7uD8
+
+![Discord Server](https://discord.com/api/guilds/730339636639039548/widget.png?style=banner2)
+
 ## License
 
 Lilliputian is licensed under GNU General Public License v3.0.
