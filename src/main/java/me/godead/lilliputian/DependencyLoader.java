@@ -51,17 +51,14 @@ class DependencyLoader {
         if (loadedFiles.contains(file)) return;
 
         try {
-            try {
-                Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
-                method.setAccessible(true);
-                method.invoke(classLoader, file.toURI().toURL());
-            } catch (Throwable t) {
-                t.printStackTrace();
-            }
-            loadedFiles.add(file);
-        } catch (NoClassDefFoundError e) {
-            e.printStackTrace();
-        }
 
+            Method method = URLClassLoader.class.getDeclaredMethod("addURL", URL.class);
+            method.setAccessible(true);
+            method.invoke(classLoader, file.toURI().toURL());
+
+            loadedFiles.add(file);
+        } catch (Throwable t) {
+            t.printStackTrace();
+        }
     }
 }
