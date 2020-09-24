@@ -93,18 +93,18 @@ public class Dependency {
 
     private File download() {
 
-        File dir = new File(Lilliputian.path);
+        File dir = new File(Lilliputian.getPath());
 
         if (!dir.exists()) dir.mkdirs();
 
-        File file = new File(Lilliputian.path + "/" + getJarName());
+        File file = new File(Lilliputian.getPath() + "/" + getJarName());
 
         // Returns if the dependency already exists
         if (file.exists()) return file;
 
         //System.out.println(getDownloadURL());
 
-        try (FileOutputStream outputStream = new FileOutputStream(Lilliputian.path + "/" + getJarName())) {
+        try (FileOutputStream outputStream = new FileOutputStream(Lilliputian.getPath() + "/" + getJarName())) {
             outputStream.getChannel()
                     .transferFrom(Channels.newChannel(new URL(getDownloadURL())
                             .openStream()), 0, Long.MAX_VALUE);
@@ -113,5 +113,4 @@ public class Dependency {
         }
         return file;
     }
-
 }

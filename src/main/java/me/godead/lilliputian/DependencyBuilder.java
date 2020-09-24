@@ -32,7 +32,7 @@ import java.util.List;
 public class DependencyBuilder {
 
     @NotNull
-    public static List<Dependency> dependencies = new ArrayList<>();
+    private static final List<Dependency> dependencies = new ArrayList<>();
 
     public DependencyBuilder addDependency(@NotNull Dependency dependency) {
         dependencies.add(dependency);

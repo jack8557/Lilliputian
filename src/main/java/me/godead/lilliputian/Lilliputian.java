@@ -36,17 +36,36 @@ public class Lilliputian {
     private static Plugin plugin = null;
 
     @Nullable
-    public static String path = null;
+    private static String path = null;
 
+    /**
+     * @param plugin Your plugin instance
+     */
     public Lilliputian(@NotNull Plugin plugin) {
-        this.plugin = plugin;
-        this.path = plugin.getDataFolder().getParent() + "/" + "LilliputianLibraries";
+        Lilliputian.plugin = plugin;
+        path = plugin.getDataFolder().getParent() + "/" + "LilliputianLibraries";
+    }
+
+    /**
+     * @param plugin Your plugin instance
+     * @param path   (Optional) The path to download the Dependencies to.
+     *               (Example: "/MyPlugin" Will download them to a Folder called MyPlugin inside the server's plugins folder)
+     */
+    public Lilliputian(@NotNull Plugin plugin, String path) {
+        Lilliputian.plugin = plugin;
+        Lilliputian.path = plugin.getDataFolder().getParent() + path;
     }
 
     @NotNull
     public static Plugin getPlugin() {
         assert plugin != null : "Error. Plugin seems to be null";
         return plugin;
+    }
+
+    @NotNull
+    public static String getPath() {
+        assert path != null : "Error. Path seems to be null";
+        return path;
     }
 
     public DependencyBuilder getDependencyBuilder() {
